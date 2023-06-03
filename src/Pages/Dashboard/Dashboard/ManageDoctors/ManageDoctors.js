@@ -16,7 +16,7 @@ const ManageDoctors = () => {
         queryKey: ['doctors'],
         queryFn: async () => {
             try {
-                const res = await fetch('http://localhost:5000/doctors', {
+                const res = await fetch('https://hospital-and-doctor-management-system-server.vercel.app/doctors', {
                     headers: {
                         authorization: `bearer ${localStorage.getItem('accessToken')}`
                     }
@@ -30,21 +30,21 @@ const ManageDoctors = () => {
         }
     });
 
-    
+
     const handleDeleteDoctor = doctor => {
-        fetch(`http://localhost:5000/doctors/${doctor._id}`, {
-            method: 'DELETE', 
+        fetch(`https://hospital-and-doctor-management-system-server.vercel.app/doctors/${doctor._id}`, {
+            method: 'DELETE',
             headers: {
                 authorization: `bearer ${localStorage.getItem('accessToken')}`
             }
         })
-        .then(res => res.json())
-        .then(data => {
-            if(data.deletedCount > 0){
-                refetch();
-                toast.success(`Doctor ${doctor.name} deleted successfully`)
-            }
-        })
+            .then(res => res.json())
+            .then(data => {
+                if (data.deletedCount > 0) {
+                    refetch();
+                    toast.success(`Doctor ${doctor.name} deleted successfully`)
+                }
+            })
     }
 
     if (isLoading) {
@@ -90,10 +90,10 @@ const ManageDoctors = () => {
                 deletingDoctor && <ConfirmationModal
                     title={`Are you sure you want to delete?`}
                     message={`If you delete ${deletingDoctor.name}. It cannot be undone.`}
-                    successAction = {handleDeleteDoctor}
+                    successAction={handleDeleteDoctor}
                     successButtonName="Delete"
-                    modalData = {deletingDoctor}
-                    closeModal = {closeModal}
+                    modalData={deletingDoctor}
+                    closeModal={closeModal}
                 >
                 </ConfirmationModal>
             }

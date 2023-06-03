@@ -6,26 +6,26 @@ const AllUsers = () => {
     const { data: users = [], refetch } = useQuery({
         queryKey: ['users'],
         queryFn: async () => {
-            const res = await fetch('http://localhost:5000/users');
+            const res = await fetch('https://hospital-and-doctor-management-system-server.vercel.app/users');
             const data = await res.json();
             return data;
         }
     });
 
     const handelMakeAdmin = id => {
-        fetch(`http://localhost:5000/users/admin/${id}`, {
+        fetch(`https://hospital-and-doctor-management-system-server.vercel.app/users/admin/${id}`, {
             method: 'PUT',
             headers: {
                 authorization: `bearer ${localStorage.getItem('accessToken')}`
             }
         })
-        .then(res => res.json())
-        .then(data => {
-            if(data.modifiedCount > 0){
-                toast.success('Make admin successful')
-                refetch();
-            }
-        })
+            .then(res => res.json())
+            .then(data => {
+                if (data.modifiedCount > 0) {
+                    toast.success('Make admin successful')
+                    refetch();
+                }
+            })
 
     }
 
@@ -46,16 +46,16 @@ const AllUsers = () => {
                         </tr>
                     </thead>
                     <tbody>
-                       {
-                        users.map((user,i) => <tr>
-                        <th>{i+1}</th>
-                        <td>{user.name}</td>
-                        <td>{user.email}</td>
-                        <td>{ user?.role !== 'admin' && <button onClick={() => handelMakeAdmin(user._id)} 
-                        className='btn btn-xl btn-primary'>Make Admin</button>}</td>
-                        <td><button className='btn btn-xs btn-danger'>Delete</button></td>
-                    </tr>)
-                       }
+                        {
+                            users.map((user, i) => <tr>
+                                <th>{i + 1}</th>
+                                <td>{user.name}</td>
+                                <td>{user.email}</td>
+                                <td>{user?.role !== 'admin' && <button onClick={() => handelMakeAdmin(user._id)}
+                                    className='btn btn-xl btn-primary'>Make Admin</button>}</td>
+                                <td><button className='btn btn-xs btn-danger'>Delete</button></td>
+                            </tr>)
+                        }
                     </tbody>
                 </table>
             </div>

@@ -10,17 +10,17 @@ const SignUp = () => {
     const { register, handleSubmit, formState: { errors } } = useForm();
     const { createUser, updateUser } = useContext(AuthContext);
     const [signUpError, setSignUPError] = useState('');
-    
+
     const [createdUserEmail, setCreatedEmail] = useState('');
     const [token] = useToken(createdUserEmail);
     const navigate = useNavigate()
 
-    if(token){
+    if (token) {
         navigate('/');
     }
-    
+
     const handleSignUp = (data) => {
-       // console.log(data);
+        // console.log(data);
         setSignUPError('');
         createUser(data.email, data.password)
             .then(result => {
@@ -31,7 +31,7 @@ const SignUp = () => {
                     displayName: data.name
                 }
                 updateUser(userInfo)
-                    .then(() => { 
+                    .then(() => {
                         saveUser(data.name, data.email);
                     })
                     .catch(err => console.log(err));
@@ -42,23 +42,23 @@ const SignUp = () => {
             });
     }
 
-    const saveUser = (name, email) =>{
-        const user = {name, email};
-        fetch('http://localhost:5000/users',{
+    const saveUser = (name, email) => {
+        const user = { name, email };
+        fetch('https://hospital-and-doctor-management-system-server.vercel.app/users', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'
             },
             body: JSON.stringify(user)
         })
-        .then(res => res.json())
-        .then(data =>{
-            //console.log('save user',data);
-            setCreatedEmail(email)
-        })
+            .then(res => res.json())
+            .then(data => {
+                //console.log('save user',data);
+                setCreatedEmail(email)
+            })
     }
 
-   
+
 
     return (
         <div className='h-[800px] flex justify-center items-center'>

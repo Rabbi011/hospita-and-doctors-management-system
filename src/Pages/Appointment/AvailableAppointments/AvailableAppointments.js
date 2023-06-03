@@ -10,17 +10,17 @@ const AvailableAppointments = ({ selectedDate }) => {
     const [treatment, setTreatment] = useState(null);
     const date = format(selectedDate, 'PP');
 
-    const {data:appointmentOptions = [], refetch, isLoading} =useQuery({
-        queryKey:['appointmentOptions', date],
-        queryFn: () => fetch(`http://localhost:5000/appointmentOptions?date=${date}`)
-        .then(req => req.json())
+    const { data: appointmentOptions = [], refetch, isLoading } = useQuery({
+        queryKey: ['appointmentOptions', date],
+        queryFn: () => fetch(`https://hospital-and-doctor-management-system-server.vercel.app/appointmentOptions?date=${date}`)
+            .then(req => req.json())
     });
-    if(isLoading){
+    if (isLoading) {
         return <Loading></Loading>
     }
 
     // useEffect(() => {
-    //     fetch('http://localhost:5000/appointmentOptions')
+    //     fetch('https://hospital-and-doctor-management-system-server.vercel.app/appointmentOptions')
     //         .then(req => req.json())
     //         .then(data => setAppointmentOptions(data))
     // }, [])
@@ -43,7 +43,7 @@ const AvailableAppointments = ({ selectedDate }) => {
                     treatment={treatment}
                     selectedDate={selectedDate}
                     setTreatment={setTreatment}
-                    refetch = {refetch}
+                    refetch={refetch}
                 ></BookingModal>
             }
 
