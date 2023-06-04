@@ -2,6 +2,7 @@ import { format } from 'date-fns';
 import React, { useContext } from 'react';
 import { AuthContext } from '../../../contexts/AuthProvider';
 import { toast } from 'react-hot-toast';
+import { Link } from 'react-router-dom';
 
 const BookingModal = ({ treatment, selectedDate, setTreatment, refetch }) => {
     const { name: treatmentName, slots, price } = treatment; //treatment is just another name of appointmentOptions json data with name, slots, _id
@@ -75,7 +76,11 @@ const BookingModal = ({ treatment, selectedDate, setTreatment, refetch }) => {
                         <input name="email" type="email" defaultValue={user?.email} disabled placeholder="Email Address" className="input w-full input-bordered" />
                         <input name="phone" type="text" placeholder="Phone Number" className="input w-full input-bordered" />
                         <br />
-                        <input className='btn btn-accent w-full' type="submit" value="Submit" />
+                        
+                        {
+                           user?.email ? <input className='btn btn-accent w-full' type="submit" value="Submit" /> : <Link className='btn btn-outline btn-error w-full' to="/login">Please Login</Link>
+                        }
+                        
                     </form>
                 </div>
             </div>
