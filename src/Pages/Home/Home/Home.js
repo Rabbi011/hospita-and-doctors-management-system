@@ -4,6 +4,8 @@ import InfoCards from '../InfoCards/InfoCards';
 import Services from '../Services/Services';
 import MakeAppointment from '../MakeAppointment/MakeAppointment';
 import Testimonial from '../Testimonial/Testimonial';
+import MessengerCustomerChatBoard from '../../Shared/MessengerCustomerChatBoard/MessengerCustomerChatBoard';
+
 
 
 const Home = () => {
@@ -14,7 +16,8 @@ const Home = () => {
             <Services></Services>
             <MakeAppointment></MakeAppointment>
             <Testimonial></Testimonial>
-            
+           <MessengerCustomerChatBoard></MessengerCustomerChatBoard> 
+           
         </div>
     );
 };
