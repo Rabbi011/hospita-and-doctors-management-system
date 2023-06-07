@@ -5,6 +5,7 @@ module.exports = {
   ],
   daisyui:{
     themes: [
+      
       {
         doctortheme:{
           primary: '#0FCFEC',
@@ -12,12 +13,18 @@ module.exports = {
           accent: "#3A4256",
           neutral: "#3D4451",
           "base-100": "#FFFFFF",
-        }
-      }
-    ]
+        },
+      },
+      "dark",
+      "cupcake",
+    ],
+
+
   },
   theme: {
     extend: {},
   },
   plugins: [require("daisyui")],
+
+
 }

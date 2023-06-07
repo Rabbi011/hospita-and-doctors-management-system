@@ -1,7 +1,8 @@
 
 [
     {
-      "name": "Teeth Orthodontics",
+      "name": "Cardiologists",
+      "Doctor name": "Halima Akter",
       "slots": [
         "08.00 AM - 08.30 AM",
         "08.30 AM - 09.00 AM",
@@ -22,7 +23,8 @@
       ]
     },
     {
-      "name": "Cosmetic Dentistry",
+      "name": "Dermatologists",
+      "Doctor name": "Province Rehan",
       "slots": [
         "08.00 AM - 08.30 AM",
         "08.30 AM - 09.00 AM",
@@ -43,7 +45,8 @@
       ]
     },
     {
-      "name": "Teeth Cleaning",
+      "name": "Ophthalmologists",
+      "Doctor name": "Asifur Rahoman",
       "slots": [
         "08.00 AM - 08.30 AM",
         "08.30 AM - 09.00 AM",
@@ -64,7 +67,8 @@
       ]
     },
     {
-      "name": "Cavity Protection",
+      "name": "Oncologists",
+      "Doctor name": "Rakibul Hasan",
       "slots": [
         "08.00 AM - 08.30 AM",
         "08.30 AM - 09.00 AM",
@@ -85,12 +89,19 @@
       ]
     },
     {
-      "name": "Pediatric Dental",
+      "name": "Obstetricians and Gynecologists",
+      "Doctor name": "Adrita Sultana",
       "slots": [
+        "08.00 AM - 08.30 AM",
+        "08.30 AM - 09.00 AM",
+        "09.00 AM - 9.30 AM",
+        "09.30 AM - 10.00 AM",
+        "10.00 AM - 10.30 AM"
       ]
     },
     {
-      "name": "Oral Surgery",
+      "name": "Medicine Specialists",
+      "Doctor name": "Jannatul Ferdous",
       "slots": [
         "08.00 AM - 08.30 AM",
         "08.30 AM - 09.00 AM",
