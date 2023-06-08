@@ -1,6 +1,7 @@
 import React, { useContext } from 'react';
-import { useNavigate, useRouteError } from 'react-router-dom';
+import { Link, useNavigate, useRouteError } from 'react-router-dom';
 import { AuthContext } from '../../../contexts/AuthProvider';
+import dribbble from '../../../assets/images/dribbble_1.gif';
 
 const DisplayError = () => {
     const { logOut } = useContext(AuthContext);
@@ -11,16 +12,24 @@ const DisplayError = () => {
         logOut()
             .then(() => {
                 navigate('/login');
-             })
+            })
             .catch(err => console.log(err));
     }
 
     return (
-        <div>
-            <p className='text-red-500'>Something went wrong!!!</p>
-            <p className='text-red-400'>{error.statusText || error.message}</p>
-            <h4 className="text-3xl"> Please <button onClick={handleLogOut}>Sign out</button> and log back in</h4>
-        </div>
+        <section >
+            <div className='text-center mt-16'>
+                <p className='text-red-500'>Something went wrong!!!</p>
+                <p className='text-red-400'>{error.statusText || error.message}</p>
+                <Link className="text-3xl"> Please <button onClick={handleLogOut}>Sign out</button> and log back in</Link>
+            </div>
+
+            <div className='hero container max-w-screen-lg mx-auto pt-10'>
+                <img src={dribbble} className=" rounded-lg shadow-2xl lg:w-1/2" alt='' />
+            </div>
+
+
+        </section>
     );
 };
 

@@ -1,6 +1,6 @@
 import React from 'react';
 
-import char from '../../../assets/images/chair.png';
+import char from '../../../assets/images/chair.jpg';
 import PrimaryButton from '../../../components/PrimaryButton/PrimaryButton';
 import bg from '../../../assets/images/bg.png';
 
