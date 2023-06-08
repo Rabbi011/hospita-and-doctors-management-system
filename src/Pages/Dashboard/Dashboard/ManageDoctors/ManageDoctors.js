@@ -3,6 +3,7 @@ import React, { useState } from 'react';
 import toast from 'react-hot-toast';
 import Loading from '../../../Shared/Loading/Loading';
 import ConfirmationModal from '../../../Shared/ConfirmationModal/ConfirmationModal';
+import DeleteIcon from '@mui/icons-material/Delete';
 
 const ManageDoctors = () => {
     const [deletingDoctor, setDeletingDoctor] = useState(null);
@@ -79,7 +80,7 @@ const ManageDoctors = () => {
                                 <td>{doctor.email}</td>
                                 <td>{doctor.specialty}</td>
                                 <td>
-                                    <label onClick={() => setDeletingDoctor(doctor)} htmlFor="confirmation-modal" className="btn btn-sm btn-error">Delete</label>
+                                    <label onClick={() => setDeletingDoctor(doctor)} htmlFor="confirmation-modal"><DeleteIcon style={{ color: "#d11a2a", cursor: "grab" }} /></label>
                                 </td>
                             </tr>)
                         }

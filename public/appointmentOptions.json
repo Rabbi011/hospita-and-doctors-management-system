@@ -2,7 +2,8 @@
 [
     {
       "name": "Cardiologists",
-      "Doctor name": "Halima Akter",
+      "DoctorName": "Halima Akter",
+      "price": 500,
       "slots": [
         "08.00 AM - 08.30 AM",
         "08.30 AM - 09.00 AM",
@@ -24,7 +25,8 @@
     },
     {
       "name": "Dermatologists",
-      "Doctor name": "Province Rehan",
+      "DoctorName": "Province Rehan",
+      "price": 600,
       "slots": [
         "08.00 AM - 08.30 AM",
         "08.30 AM - 09.00 AM",
@@ -46,7 +48,8 @@
     },
     {
       "name": "Ophthalmologists",
-      "Doctor name": "Asifur Rahoman",
+      "DoctorName": "Asifur Rahoman",
+      "price": 700,
       "slots": [
         "08.00 AM - 08.30 AM",
         "08.30 AM - 09.00 AM",
@@ -68,7 +71,8 @@
     },
     {
       "name": "Oncologists",
-      "Doctor name": "Rakibul Hasan",
+      "DoctorName": "Rakibul Hasan",
+      "price": 900,
       "slots": [
         "08.00 AM - 08.30 AM",
         "08.30 AM - 09.00 AM",
@@ -90,7 +94,8 @@
     },
     {
       "name": "Obstetricians and Gynecologists",
-      "Doctor name": "Adrita Sultana",
+      "DoctorName": "Adrita Sultana",
+      "price": 800,
       "slots": [
         "08.00 AM - 08.30 AM",
         "08.30 AM - 09.00 AM",
@@ -101,7 +106,8 @@
     },
     {
       "name": "Medicine Specialists",
-      "Doctor name": "Jannatul Ferdous",
+      "DoctorName": "Jannatul Ferdous",
+      "price": 700,
       "slots": [
         "08.00 AM - 08.30 AM",
         "08.30 AM - 09.00 AM",

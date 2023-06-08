@@ -1,6 +1,10 @@
 import { useQuery } from '@tanstack/react-query';
 import React from 'react';
 import { toast } from 'react-hot-toast';
+import AdminPanelSettingsIcon from '@mui/icons-material/AdminPanelSettings';
+
+
+
 
 const AllUsers = () => {
     const { data: users = [], refetch } = useQuery({
@@ -42,7 +46,7 @@ const AllUsers = () => {
                             <th>Name</th>
                             <th>Email</th>
                             <th>Admin</th>
-                            <th>Delete</th>
+                            <th>Role</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -53,7 +57,11 @@ const AllUsers = () => {
                                 <td>{user.email}</td>
                                 <td>{user?.role !== 'admin' && <button onClick={() => handelMakeAdmin(user._id)}
                                     className='btn btn-xl btn-primary'>Make Admin</button>}</td>
-                                <td><button className='btn btn-xs btn-danger'>Delete</button></td>
+                                <td>
+                                    {/* admin role  */}
+                                {user?.role === 'admin' && <button
+                                    className='btn btn-xl btn-primary'><AdminPanelSettingsIcon/></button>}
+                                </td>
                             </tr>)
                         }
                     </tbody>
