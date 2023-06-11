@@ -17,14 +17,14 @@ const InfoCards = () => {
         {
             id: 2,
             name: 'Our Locations',
-            description: 'Open 9.00 am to 5.00pm everyday',
+            description: 'Mirpur-1, Dhaka, Bangladesh',
             icon: marker,
             bgClass: 'bg-accent'
         },
         {
             id: 3,
             name: 'Contact Us',
-            description: 'Open 9.00 am to 5.00pm everyday',
+            description: 'rakibul13011@gmail.com',
             icon: phone,
             bgClass: 'bg-gradient-to-r from-primary to-secondary'
         },
