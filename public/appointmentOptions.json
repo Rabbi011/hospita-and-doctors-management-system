@@ -2,7 +2,7 @@
 [
     {
       "name": "Cardiologists",
-      "DoctorName": "Halima Akter",
+      "DoctorName": "Dr.Halima Akter",
       "price": 500,
       "slots": [
         "08.00 AM - 08.30 AM",
@@ -25,7 +25,7 @@
     },
     {
       "name": "Dermatologists",
-      "DoctorName": "Province Rehan",
+      "DoctorName": "Dr.Province Rehan",
       "price": 600,
       "slots": [
         "08.00 AM - 08.30 AM",
@@ -48,7 +48,7 @@
     },
     {
       "name": "Ophthalmologists",
-      "DoctorName": "Asifur Rahoman",
+      "DoctorName": "Dr.Asifur Rahoman",
       "price": 700,
       "slots": [
         "08.00 AM - 08.30 AM",
@@ -57,13 +57,6 @@
         "09.30 AM - 10.00 AM",
         "10.00 AM - 10.30 AM",
         "10.30 AM - 11.00 AM",
-        "11.00 AM - 11.30 AM",
-        "11.30 AM - 12.00 AM",
-        "1.00 PM - 1.30 PM",
-        "1.30 PM - 2.00 PM",
-        "2.00 PM - 2.30 PM",
-        "2.30 PM - 3.00 PM",
-        "3.00 PM - 3.30 PM",
         "3.30 PM - 4.00 PM",
         "4.00 PM - 4.30 PM",
         "4.30 PM - 5.00 PM"
@@ -71,7 +64,7 @@
     },
     {
       "name": "Oncologists",
-      "DoctorName": "Rakibul Hasan",
+      "DoctorName": "Dr.Rakibul Hasan",
       "price": 900,
       "slots": [
         "08.00 AM - 08.30 AM",
@@ -94,7 +87,7 @@
     },
     {
       "name": "Obstetricians and Gynecologists",
-      "DoctorName": "Adrita Sultana",
+      "DoctorName": "Dr.Adrita Sultana",
       "price": 800,
       "slots": [
         "08.00 AM - 08.30 AM",
@@ -106,7 +99,42 @@
     },
     {
       "name": "Medicine Specialists",
-      "DoctorName": "Jannatul Ferdous",
+      "DoctorName": "Dr.Jannatul Ferdous",
+      "price": 700,
+      "slots": [
+        "08.00 AM - 08.30 AM",
+        "1.00 PM - 1.30 PM",
+        "1.30 PM - 2.00 PM",
+        "2.00 PM - 2.30 PM",
+        "2.30 PM - 3.00 PM",
+        "3.00 PM - 3.30 PM",
+        "3.30 PM - 4.00 PM",
+        "4.00 PM - 4.30 PM",
+        "4.30 PM - 5.00 PM"
+      ]
+    },
+    {
+      "name": "Anesthesiology",
+      "DoctorName": "Dr.Jannatul Ferdous",
+      "price": 700,
+      "slots": [
+        "08.00 AM - 08.30 AM",
+        "08.30 AM - 09.00 AM",
+        "09.00 AM - 9.30 AM",
+        "09.30 AM - 10.00 AM",
+        "10.00 AM - 10.30 AM",
+        "10.30 AM - 11.00 AM",
+        "11.00 AM - 11.30 AM",
+        "11.30 AM - 12.00 AM",
+        "1.00 PM - 1.30 PM",
+        "1.30 PM - 2.00 PM",
+        "2.00 PM - 2.30 PM",
+        "2.30 PM - 3.00 PM"
+      ]
+    },
+    {
+      "name": "Birthing Centers",
+      "DoctorName": "Dr.Halima Akter",
       "price": 700,
       "slots": [
         "08.00 AM - 08.30 AM",
@@ -124,6 +152,199 @@
         "3.00 PM - 3.30 PM",
         "3.30 PM - 4.00 PM",
         "4.00 PM - 4.30 PM",
+        "4.30 PM - 5.00 PM"
+      ]
+    },
+    {
+      "name": "Blood (Hematology)",
+      "DoctorName": "Dr.Province Rehan",
+      "price": 700,
+      "slots": [
+        "09.30 AM - 10.00 AM",
+        "10.00 AM - 10.30 AM",
+        "10.30 AM - 11.00 AM",
+        "11.00 AM - 11.30 AM",
+        "11.30 AM - 12.00 AM",
+        "1.00 PM - 1.30 PM",
+        "1.30 PM - 2.00 PM",
+        "2.00 PM - 2.30 PM",
+        "2.30 PM - 3.00 PM",
+        "3.00 PM - 3.30 PM",
+        "3.30 PM - 4.00 PM",
+        "4.00 PM - 4.30 PM",
+        "4.30 PM - 5.00 PM"
+      ]
+    },
+    {
+      "name": "Bones (Orthopedics)",
+      "DoctorName": "Dr.Asifur Rahoman",
+      "price": 700,
+      "slots": [
+        "08.00 AM - 08.30 AM",
+        "08.30 AM - 09.00 AM",
+        "09.00 AM - 9.30 AM",
+        "09.30 AM - 10.00 AM",
+        "10.00 AM - 10.30 AM",
+        "10.30 AM - 11.00 AM",
+        "11.00 AM - 11.30 AM",
+        "11.30 AM - 12.00 AM",
+        "1.00 PM - 1.30 PM",
+        "1.30 PM - 2.00 PM",
+        "2.00 PM - 2.30 PM",
+        "4.30 PM - 5.00 PM"
+      ]
+    },
+    {
+      "name": "Cardiac Surgery",
+      "DoctorName": "Dr.Adrita Sultana",
+      "price": 700,
+      "slots": [
+        "08.00 AM - 08.30 AM",
+        "08.30 AM - 09.00 AM",
+        "09.00 AM - 9.30 AM",
+        "09.30 AM - 10.00 AM",
+        "1.00 PM - 1.30 PM",
+        "1.30 PM - 2.00 PM",
+        "2.00 PM - 2.30 PM",
+        "2.30 PM - 3.00 PM",
+        "3.00 PM - 3.30 PM",
+        "3.30 PM - 4.00 PM",
+        "4.00 PM - 4.30 PM",
+        "4.30 PM - 5.00 PM"
+      ]
+    },
+    {
+      "name": "Cardiology (Heart)",
+      "DoctorName": "Dr.Rakibul Hasan",
+      "price": 700,
+      "slots": [
+        "08.00 AM - 08.30 AM",
+        "08.30 AM - 09.00 AM",
+        "09.00 AM - 9.30 AM",
+        "09.30 AM - 10.00 AM",
+        "10.00 AM - 10.30 AM",
+        "10.30 AM - 11.00 AM",
+        "11.00 AM - 11.30 AM",
+        "11.30 AM - 12.00 AM",
+        "1.00 PM - 1.30 PM",
+        "1.30 PM - 2.00 PM",
+        "4.00 PM - 4.30 PM",
+        "4.30 PM - 5.00 PM"
+      ]
+    },
+    {
+      "name": "Dialysis",
+      "DoctorName": "Dr.Jannatul Ferdous",
+      "price": 700,
+      "slots": [
+        "08.00 AM - 08.30 AM",
+        "08.30 AM - 09.00 AM",
+        "09.00 AM - 9.30 AM",
+        "09.30 AM - 10.00 AM",
+        "1.00 PM - 1.30 PM",
+        "1.30 PM - 2.00 PM",
+        "2.00 PM - 2.30 PM",
+        "2.30 PM - 3.00 PM",
+        "3.00 PM - 3.30 PM",
+        "3.30 PM - 4.00 PM",
+        "4.00 PM - 4.30 PM",
+        "4.30 PM - 5.00 PM"
+      ]
+    },
+    {
+      "name": "Digestive Care (Gastroenterology & Hepatology)",
+      "DoctorName": "Dr.Adrita Sultana",
+      "price": 700,
+      "slots": [
+        "08.00 AM - 08.30 AM",
+        "08.30 AM - 09.00 AM",
+        "10.30 AM - 11.00 AM",
+        "11.00 AM - 11.30 AM",
+        "11.30 AM - 12.00 AM",
+        "1.00 PM - 1.30 PM",
+        "1.30 PM - 2.00 PM",
+        "2.00 PM - 2.30 PM",
+        "2.30 PM - 3.00 PM",
+        "3.00 PM - 3.30 PM",
+        "3.30 PM - 4.00 PM",
+        "4.00 PM - 4.30 PM",
+        "4.30 PM - 5.00 PM"
+      ]
+    },
+    {
+      "name": "Eye Diseases (Ophthalmology)",
+      "DoctorName": "Dr.Halima Akter",
+      "price": 700,
+      "slots": [
+        "08.00 AM - 08.30 AM",
+        "08.30 AM - 09.00 AM",
+        "09.00 AM - 9.30 AM",
+        "09.30 AM - 10.00 AM",
+        "10.00 AM - 10.30 AM",
+        "10.30 AM - 11.00 AM",
+        "11.00 AM - 11.30 AM",
+        "11.30 AM - 12.00 AM",
+        "1.00 PM - 1.30 PM",
+        "1.30 PM - 2.00 PM",
+        "2.00 PM - 2.30 PM",
+        "2.30 PM - 3.00 PM",
+        "3.00 PM - 3.30 PM"
+      ]
+    },
+    {
+      "name": "Eye Services (Optometry)",
+      "DoctorName": "Dr.Province Rehan",
+      "price": 700,
+      "slots": [
+        "08.00 AM - 08.30 AM",
+        "08.30 AM - 09.00 AM",
+        "09.00 AM - 9.30 AM",
+        "09.30 AM - 10.00 AM",
+        "10.00 AM - 10.30 AM",
+        "1.00 PM - 1.30 PM",
+        "1.30 PM - 2.00 PM",
+        "2.00 PM - 2.30 PM",
+        "2.30 PM - 3.00 PM",
+        "3.00 PM - 3.30 PM",
+        "3.30 PM - 4.00 PM",
+        "4.00 PM - 4.30 PM",
+        "4.30 PM - 5.00 PM"
+      ]
+    },
+    {
+      "name": "Foot & Ankle (Podiatry)",
+      "DoctorName": "Dr.Asifur Rahoman",
+      "price": 700,
+      "slots": [
+        "09.30 AM - 10.00 AM",
+        "10.00 AM - 10.30 AM",
+        "10.30 AM - 11.00 AM",
+        "11.00 AM - 11.30 AM",
+        "11.30 AM - 12.00 AM",
+        "1.00 PM - 1.30 PM",
+        "1.30 PM - 2.00 PM",
+        "2.00 PM - 2.30 PM",
+        "2.30 PM - 3.00 PM",
+        "3.00 PM - 3.30 PM",
+        "3.30 PM - 4.00 PM",
+        "4.00 PM - 4.30 PM",
+        "4.30 PM - 5.00 PM"
+      ]
+    },
+    {
+      "name": "Geriatrics",
+      "DoctorName": "Dr.Adrita Sultana",
+      "price": 700,
+      "slots": [
+        "08.00 AM - 08.30 AM",
+        "08.30 AM - 09.00 AM",
+        "09.00 AM - 9.30 AM",
+        "09.30 AM - 10.00 AM",
+        "10.00 AM - 10.30 AM",
+        "10.30 AM - 11.00 AM",
+        "11.00 AM - 11.30 AM",
+        "11.30 AM - 12.00 AM",
+        "1.00 PM - 1.30 PM",
         "4.30 PM - 5.00 PM"
       ]
     }
