@@ -5,12 +5,14 @@ import Services from '../Services/Services';
 import MakeAppointment from '../MakeAppointment/MakeAppointment';
 import Testimonial from '../Testimonial/Testimonial';
 import MessengerCustomerChatBoard from '../../Shared/MessengerCustomerChatBoard/MessengerCustomerChatBoard';
+import PhoneLogin from '../../PhoneLogin/PhoneLogin';
 
 
 
 const Home = () => {
     return (
         <div className='mx-5'>
+            {/* <PhoneLogin></PhoneLogin> */}
             <Banner></Banner>
             <InfoCards></InfoCards>
             <Services></Services>

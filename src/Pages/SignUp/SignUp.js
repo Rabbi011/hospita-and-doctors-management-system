@@ -4,6 +4,8 @@ import toast from 'react-hot-toast';
 import { Link, useNavigate } from 'react-router-dom';
 import { AuthContext } from '../../contexts/AuthProvider';
 import useToken from '../../hooks/useToken';
+import { sendEmailVerification } from 'firebase/auth';
+import { auth } from '../../firebase/firebase.config';
 //import { AuthContext } from '../../contexts/AuthProvider';
 
 const SignUp = () => {
@@ -22,8 +24,9 @@ const SignUp = () => {
     const handleSignUp = (data) => {
         // console.log(data);
         setSignUPError('');
-        createUser(data.email, data.password)
+            createUser(data.email, data.password)
             .then(result => {
+               
                 const user = result.user;
                 console.log(user);
                 toast('User Created Successfully.')
@@ -35,11 +38,13 @@ const SignUp = () => {
                         saveUser(data.name, data.email);
                     })
                     .catch(err => console.log(err));
+                    verifyEmail()      
             })
             .catch(error => {
                 console.log(error)
                 setSignUPError(error.message)
             });
+        
     }
 
     const saveUser = (name, email) => {
@@ -57,6 +62,15 @@ const SignUp = () => {
                 setCreatedEmail(email)
             })
     }
+
+
+    const verifyEmail = () =>{
+        sendEmailVerification(auth.currentUser)
+        .then( () => {
+            alert('Please check your email and verify')
+        })
+    }
+
 
 
 

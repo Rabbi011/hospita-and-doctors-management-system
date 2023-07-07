@@ -11,24 +11,24 @@ const Testimonial = () => {
     const reviews = [
         {
             _id: 1, 
-            name: 'Winson Herry',
+            name: 'Prince Mahahud',
             img: people1,
-            review: 'It is a long established fact that by the readable content of a lot layout. The point of using Lorem a more-or-less normal distribu to using Content here, content',
-            location: 'California'
+            review: 'Recently visited health check up department of This Hospital for a whole body check up. The entire process from check in to the end was seamless. The staff at the health check department was courteous, helpful and very attentive.',
+            location: 'Khulna'
         },
         {
             _id: 2, 
-            name: 'Winson Herry',
+            name: 'Ripon hasan',
             img: people2,
-            review: 'It is a long established fact that by the readable content of a lot layout. The point of using Lorem a more-or-less normal distribu to using Content here, content',
-            location: 'California'
+            review: 'This hospital Dr.Radha Shah at reception people Mr.Venkat helping to patients excelent way of speaking Guidense.. I felt very Happy with this people.. I strongly recommend to my Friends n Relatives to this Apollo Hospital',
+            location: 'Dhaka'
         },
         {
             _id: 3, 
-            name: 'Winson Herry',
+            name: 'Nasim shrker',
             img: people3,
-            review: 'It is a long established fact that by the readable content of a lot layout. The point of using Lorem a more-or-less normal distribu to using Content here, content',
-            location: 'California'
+            review: 'This hospital Dr.Halima Shah at reception people Mr.Venkat helping to patients excelent way of speaking Guidense.. I felt very Happy with this people.. I strongly recommend to my Friends n Relatives to this Hospital',
+            location: 'khulna'
         },
     ]
 

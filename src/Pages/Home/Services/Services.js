@@ -2,9 +2,9 @@ import React from 'react';
 import fluoride from '../../../assets/images/fluoride.png'
 import cavity from '../../../assets/images/cavity.png'
 import whitening from '../../../assets/images/whitening.png';
-import FreeCheckup from '../../../assets/images/FreeCheckup.jpg';
-import Medicines from '../../../assets/images/Medicines.jpg';
-import Ambulance from '../../../assets/images/Ambulance.jpg';
+import FreeCheckup from '../../../assets/images/FreeCheckup.png';
+import Medicines from '../../../assets/images/Medicines.png';
+import Ambulance from '../../../assets/images/Ambulance.png';
 import Service from './Service';
 
 const Services = () => {
@@ -13,37 +13,37 @@ const Services = () => {
         {
             id: 1,
             name: 'Fluoride Treatment',
-            description: 'Lorem Ipsum is simply dummy printing and typesetting indust Ipsum has been the',
+            description: 'Fluoride treatment is a dental procedure that involves the application of fluoride to the teeth in order to prevent tooth decay and strengthen enamel.',
             img: cavity
         },
         {
             id: 2,
             name: '24/7 Ambulance',
-            description: 'Lorem Ipsum is simply dummy printing and typesetting indust Ipsum has been the',
+            description: 'A 24/7 ambulance service provides round-the-clock emergency medical transportation for individuals in need of urgent medical care',
             img: Ambulance
         },
         {
             id: 3,
             name: 'Teeth Whitening',
-            description: 'Lorem Ipsum is simply dummy printing and typesetting indust Ipsum has been the',
+            description: 'Teeth whitening is a cosmetic dental procedure aimed at lightening the color of teeth and removing stains or discoloration.',
             img: whitening
         },
         {
             id: 4,
             name: 'Free Checkup',
-            description: 'Lorem Ipsum is simply dummy printing and typesetting indust Ipsum has been the',
+            description: 'A free checkup, often referred to as a complimentary or preventive checkup, is a medical examination provided at no cost to the patient',
             img: FreeCheckup
         },
         {
             id: 5,
             name: 'Medicines',
-            description: 'Lorem Ipsum is simply dummy printing and typesetting indust Ipsum has been the',
+            description: 'Medicines, also known as medications or drugs, are substances used to diagnose, treat, cure, or prevent diseases, manage symptoms, or improve overall health.',
             img: Medicines
         },
         {
             id: 6,
             name: 'Cavity Filling',
-            description: 'Lorem Ipsum is simply dummy printing and typesetting indust Ipsum has been the',
+            description: 'Cavity filling, also known as dental filling or restoration, is a common dental procedure used to repair a tooth that has been damaged by tooth decay or cavities.',
             img: fluoride 
         },
     ]
