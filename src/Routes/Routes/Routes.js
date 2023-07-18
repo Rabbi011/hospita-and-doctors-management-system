@@ -16,6 +16,7 @@ import Payment from "../../Pages/Dashboard/Payment/Payment";
 import DisplayError from "../../Pages/Shared/DisplayError/DisplayError";
 import Doctors from "../../Pages/Doctors/Doctors";
 import About from "../../Pages/About/About";
+import ResetPassword from "../../Pages/Login/ResetPassword";
 
 const router = createBrowserRouter([
     {
@@ -46,6 +47,10 @@ const router = createBrowserRouter([
             {
                 path: '/about',
                 element: <About></About>
+            },
+            {
+                path: '/resetPassword',
+                element: <ResetPassword></ResetPassword>
             },
 
         ]

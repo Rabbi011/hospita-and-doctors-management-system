@@ -9,7 +9,7 @@ import { auth } from '../../firebase/firebase.config';
 
 const Login = () => {
     const { register, formState: { errors }, handleSubmit } = useForm();
-    const [userEmail, setUserEmail] = useState('')
+    
     const { signIn, providerLogin } = useContext(AuthContext);
     const [loginError, setLoginError] = useState('');
     const [loginUserEmail, setLoginUserEmail] = useState('');
@@ -29,7 +29,6 @@ const Login = () => {
     }
 
     const handleLogin = data => {
-        console.log(data);
         setLoginError('');
         signIn(data.email, data.password)
             .then(result => {
@@ -44,24 +43,7 @@ const Login = () => {
             });
     }
 
-    const handelEmailBlur = event => {
-        const email = event.target.value;
-        setUserEmail(email);
-    }
-
-    const handelForgetPassword = () => {
-        if (!userEmail) {
-            alert("Please enter your email address");
-            return
-        }
-        sendPasswordResetEmail(auth, userEmail)
-            .then(() => {
-                alert('Password Reset email sent. Please check your email.')
-            })
-            .catch(error => {
-                console.log(error)
-            })
-    }
+    
     const googleProvider = new GoogleAuthProvider()
     const handleGoogleSignIn = () => {
         providerLogin(googleProvider)
@@ -80,7 +62,8 @@ const Login = () => {
                 <form onSubmit={handleSubmit(handleLogin)}>
                     <div className="form-control w-full max-w-xs">
                         <label className="label"> <span className="label-text">Email</span></label>
-                        <input onBlur={handelEmailBlur} type="email"
+
+                        <input type="email" name='email'
                             {...register("email", {
                                 required: "Email Address is required"
                             })}
@@ -98,7 +81,8 @@ const Login = () => {
                             className="input input-bordered w-full max-w-xs" />
 
                         <label className='mb-3 '> <span className="label-text">Forget Password?</span>
-                        <a  onClick={handelForgetPassword} className="link px-12 text-red-600">Reset Password</a>
+                        <Link to='/resetPassword' className="link px-12 text-red-600">Reset Password</Link>
+            
                         
                         </label>
 

@@ -12,9 +12,9 @@ const SignUp = () => {
     const { register, handleSubmit, formState: { errors } } = useForm();
     const { createUser, updateUser } = useContext(AuthContext);
     const [signUpError, setSignUPError] = useState('');
-
     const [createdUserEmail, setCreatedEmail] = useState('');
     const [token] = useToken(createdUserEmail);
+    //const { signIn} = useContext(AuthContext);
     const navigate = useNavigate()
 
     if (token) {
@@ -22,11 +22,10 @@ const SignUp = () => {
     }
 
     const handleSignUp = (data) => {
-        // console.log(data);
+         console.log(data);
         setSignUPError('');
             createUser(data.email, data.password)
             .then(result => {
-               
                 const user = result.user;
                 console.log(user);
                 toast('User Created Successfully.')
