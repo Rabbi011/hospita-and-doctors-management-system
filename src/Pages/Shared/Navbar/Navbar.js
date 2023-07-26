@@ -44,7 +44,7 @@ const Navbar = () => {
         {user?.uid ?
             <>
                 <li><Link to="/dashboard">Dashboard</Link></li>
-                <li><button className='font-bold uppercase' onClick={handleLogOut}>Hi,{user?.displayName}</button></li>
+                <li><button className='font-bold uppercase' onClick={handleLogOut}>Log Out</button></li>
             </>
             : <li><Link to="/login">Login</Link></li>}
 
