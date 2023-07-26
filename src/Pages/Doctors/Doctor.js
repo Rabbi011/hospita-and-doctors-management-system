@@ -1,7 +1,10 @@
+
 import React from 'react';
+
 
 const Doctor = ({DoctorOption}) => {
     const { DoctorName, deg, spe, level, work, img } = DoctorOption;
+   
     return (
         <section>
             <div className="card shadow-xl my-5">
@@ -15,7 +18,6 @@ const Doctor = ({DoctorOption}) => {
                     
                 </div>
             </div>
-            
         </section>
     );
 };

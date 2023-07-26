@@ -7,6 +7,7 @@ import doctor5 from '../../assets/images/doctor5.png';
 import doctor6 from '../../assets/images/doctor6.png';
 import Doctor from './Doctor';
 
+
 const Doctors = () => {
     const doctors = [
         {
@@ -62,8 +63,8 @@ const Doctors = () => {
             "level": "Consultant (Pediatrics)",
             "work": "Kushtia Medical College & Hospital",
             img: doctor6,
-            
-          },
+
+        },
 
 
     ]
@@ -72,14 +73,13 @@ const Doctors = () => {
         <section className='my-20'>
             <div className='grid gap-6 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mt-7'>
                 {
-                    doctors.map(option => <Doctor
+                    doctors?.map(option => <Doctor
                         key={option.id}
                         DoctorOption={option}
-                        
-
                     ></Doctor>)
                 }
             </div>
+           
         </section>
     );
 };
